@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agriculture Department — Abitech</title>
+  <style>
+    :root {
+      --accent: #228B22;
+      --accent-dark: #146b14;
+      --muted: #555;
+      --bg: #f9fafb;
+      font-family: "Poppins", system-ui, sans-serif;
+    }
+
+    body { margin: 0; background: var(--bg); color: #111; }
+
+    header {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 20px 40px; background: black; color: white; flex-wrap: wrap;
+    }
+    header img { width: 120px; border-radius: 50%; }
+    nav a {
+      color: #0b6fbf; text-decoration: none; margin: 0 10px; font-weight: 600;
+    }
+    nav a:hover { color: white; }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&w=1600')
+        center/cover no-repeat;
+      color: white; text-align: center; padding: 130px 20px;
+      background-color: rgba(0, 0, 0, 0.55); background-blend-mode: multiply;
+    }
+    .hero h1 { font-size: 48px; margin: 0; }
+    .hero p { font-size: 20px; margin-top: 10px; color: #e8e8e8; }
+
+    section { max-width: 1100px; margin: 60px auto; padding: 20px; }
+    h2 { color: var(--accent-dark); font-size: 28px; margin-bottom: 10px; }
+
+    .info-block {
+      display: flex; align-items: center; gap: 40px; margin-bottom: 60px; flex-wrap: wrap;
+    }
+    .info-block img {
+      width: 400px; height: 280px; object-fit: cover; border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1); flex-shrink: 0;
+    }
+    .info-text { flex: 1; min-width: 280px; }
+
+    .leader {
+      background: white; padding: 40px; border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-top: 80px; text-align: center;
+    }
+    .leader img {
+      width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin-bottom: 20px;
+    }
+    .leader h3 { margin: 10px 0; color: var(--accent-dark); }
+    .leader p { color: var(--muted); line-height: 1.6; }
+
+    .back {
+      display: inline-block; margin-top: 40px; padding: 12px 24px;
+      background: #0b6fbf; color: white; border-radius: 8px;
+      text-decoration: none; transition: .3s;
+    }
+    .back:hover { background: #084f91; }
+
+    footer {
+      background: #000; color: white; text-align: center; padding: 20px; margin-top: 80px;
+    }
+
+    @media (max-width: 768px) {
+      header { flex-direction: column; text-align: center; }
+      .info-block { flex-direction: column; }
+      .hero h1 { font-size: 36px; }
+      .info-block img { width: 100%; height: auto; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="abitech logo.png" alt="Abitech Logo" />
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="technology.html">Technology</a>
+    <a href="business.html">Business</a>
+    <a href="agriculture.html">Agriculture</a>
+    <a href="hierarchy.html">Leadership</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>Agriculture Department</h1>
+  <p>Driving sustainability, innovation, and growth in modern agriculture through technology and collaboration.</p>
+</div>
+
+<section>
+  <div class="info-block">
+    <div class="info-text">
+      <h2>Smart Farming and IoT Integration</h2>
+      <p>
+        Abitech is revolutionizing traditional farming by integrating IoT devices and data analytics
+        into daily agricultural operations. Smart sensors monitor soil health, temperature, and crop conditions
+        in real time. This data-driven approach allows farmers to optimize irrigation, reduce costs, and
+        increase yields with precision.
+      </p>
+    </div>
+    <img src="https://images.pexels.com/photos/93398/pexels-photo-93398.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Smart Farming IoT">
+  </div>
+
+  <div class="info-block">
+    <img src="https://images.pexels.com/photos/175389/pexels-photo-175389.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Sustainable Farming">
+    <div class="info-text">
+      <h2>Sustainability and Green Initiatives</h2>
+      <p>
+        Our agriculture division promotes eco-friendly farming techniques such as organic cultivation,
+        renewable energy use, and carbon footprint reduction. Through partnerships with local farmers,
+        Abitech provides tools and education to help communities adopt sustainable practices
+        that preserve soil fertility and biodiversity.
+      </p>
+    </div>
+  </div>
+
+  <div class="info-block">
+    <div class="info-text">
+      <h2>Farm-to-Market Supply Chain</h2>
+      <p>
+        We simplify the journey from farm to consumer through our digital supply chain platform.
+        Abitech connects farmers directly with retailers and consumers, eliminating middlemen,
+        ensuring fair pricing, and improving product traceability for quality assurance.
+      </p>
+    </div>
+    <img src="https://images.pexels.com/photos/1300972/pexels-photo-1300972.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Farm to Market">
+  </div>
+
+  <div class="info-block">
+    <img src="https://images.pexels.com/photos/1268101/pexels-photo-1268101.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Research and Innovation">
+    <div class="info-text">
+      <h2>Research and Technological Innovation</h2>
+      <p>
+        Abitech invests heavily in agricultural R&D, exploring biotechnology, precision farming,
+        and drone-assisted monitoring. Our innovation labs test new crop varieties and digital solutions
+        to tackle climate change and food insecurity while empowering small-scale farmers with modern tools.
+      </p>
+    </div>
+  </div>
+
+  <div class="leader">
+    <img src="https://images.pexels.com/photos/3772622/pexels-photo-3772622.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Grace Njeri Agriculture Head">
+    <h3>Grace Njeri — Head of Agriculture</h3>
+    <p>
+      Grace leads Abitech’s agricultural strategy, focusing on sustainability, innovation, and farmer empowerment.
+      Her vision ensures that technology and traditional farming coexist harmoniously to achieve long-term food
+      security and environmental balance.
+    </p>
+  </div>
+
+  <a href="hierarchy.html" class="back">← Back to Leadership</a>
+</section>
+
+<footer>
+  <p>© 2025 Abitech. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

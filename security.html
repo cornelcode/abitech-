@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Security Department — Abitech</title>
+  <style>
+    :root {
+      --accent: #157347;
+      --accent-dark: #0b6f50;
+      --muted: #6b7280;
+      --bg: #f9fafb;
+      font-family: "Inter", system-ui, sans-serif;
+    }
+
+    body { margin: 0; background: var(--bg); color: #111; }
+
+    header {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 20px 40px; background: black; color: white; flex-wrap: wrap;
+    }
+    header img { width: 120px; border-radius: 50%; }
+    nav a {
+      color: #0b6fbf; text-decoration: none; margin: 0 10px; font-weight: 600;
+    }
+    nav a:hover { color: white; }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://images.pexels.com/photos/5380642/pexels-photo-5380642.jpeg?auto=compress&cs=tinysrgb&w=1600')
+        center/cover no-repeat;
+      color: white; text-align: center; padding: 120px 20px;
+      background-color: rgba(0, 0, 0, 0.6); background-blend-mode: multiply;
+    }
+    .hero h1 { font-size: 48px; margin: 0; }
+    .hero p { font-size: 20px; margin-top: 10px; color: #f0f0f0; }
+
+    section { max-width: 1100px; margin: 60px auto; padding: 20px; }
+    h2 { color: var(--accent-dark); font-size: 28px; margin-bottom: 10px; }
+
+    .info-block {
+      display: flex; align-items: center; gap: 40px; margin-bottom: 60px; flex-wrap: wrap;
+    }
+    .info-block img {
+      width: 400px; height: 280px; object-fit: cover; border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1); flex-shrink: 0;
+    }
+    .info-text { flex: 1; min-width: 280px; }
+
+    .leader {
+      background: white; padding: 40px; border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-top: 80px; text-align: center;
+    }
+    .leader img {
+      width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin-bottom: 20px;
+    }
+    .leader h3 { margin: 10px 0; color: var(--accent-dark); }
+    .leader p { color: var(--muted); line-height: 1.6; }
+
+    .back {
+      display: inline-block; margin-top: 40px; padding: 12px 24px;
+      background: #0b6fbf; color: white; border-radius: 8px;
+      text-decoration: none; transition: .3s;
+    }
+    .back:hover { background: #084f91; }
+
+    footer {
+      background: #000; color: white; text-align: center; padding: 20px; margin-top: 80px;
+    }
+
+    @media (max-width: 768px) {
+      header { flex-direction: column; text-align: center; }
+      .info-block { flex-direction: column; }
+      .hero h1 { font-size: 36px; }
+      .info-block img { width: 100%; height: auto; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="abitech logo.png" alt="Abitech Logo" />
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="technology.html">Technology</a>
+    <a href="business.html">Business</a>
+    <a href="agriculture.html">Agriculture</a>
+    <a href="hierarchy.html">Leadership</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>Security Department</h1>
+  <p>Protecting Abitech’s data, people, and systems through innovation and vigilance.</p>
+</div>
+
+<section>
+  <div class="info-block">
+    <div class="info-text">
+      <h2>Cybersecurity and Data Protection</h2>
+      <p>
+        The Security Department at Abitech safeguards digital assets through advanced
+        encryption, firewalls, and AI-driven threat detection systems. Regular audits
+        ensure that all sensitive data across our tech, business, and agriculture divisions
+        remain secure from unauthorized access.
+      </p>
+    </div>
+    <img src="https://images.pexels.com/photos/5380642/pexels-photo-5380642.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Cybersecurity Operations">
+  </div>
+
+  <div class="info-block">
+    <img src="https://images.pexels.com/photos/5380614/pexels-photo-5380614.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Risk Assessment">
+    <div class="info-text">
+      <h2>Risk Management and Compliance</h2>
+      <p>
+        Abitech employs a proactive risk management framework to identify and address
+        vulnerabilities before they impact operations. We comply with international standards
+        like ISO/IEC 27001 and GDPR to ensure our customers’ trust and regulatory alignment.
+      </p>
+    </div>
+  </div>
+
+  <div class="info-block">
+    <div class="info-text">
+      <h2>Physical and Network Security</h2>
+      <p>
+        Our infrastructure security extends beyond the digital realm. Physical access control,
+        biometric systems, and 24/7 surveillance protect our facilities while maintaining
+        smooth network performance and uptime reliability across continents.
+      </p>
+    </div>
+    <img src="https://images.pexels.com/photos/7715271/pexels-photo-7715271.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Physical Security Systems">
+  </div>
+
+  <div class="info-block">
+    <img src="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Security Awareness">
+    <div class="info-text">
+      <h2>Employee Awareness and Training</h2>
+      <p>
+        The department conducts regular training sessions and cybersecurity simulations
+        to educate employees on safe digital practices. Every Abitech team member is part
+        of our security ecosystem, ensuring resilience against phishing, malware, and social engineering threats.
+      </p>
+    </div>
+  </div>
+
+  <div class="leader">
+    <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Linda Martinez CSO">
+    <h3>Linda Martinez — Chief Security Officer (CSO)</h3>
+    <p>
+      Linda oversees all aspects of Abitech’s security strategy — from data protection and risk mitigation
+      to regulatory compliance and crisis management. With over a decade of experience in enterprise
+      cybersecurity, she ensures that innovation thrives safely within the Abitech ecosystem.
+    </p>
+  </div>
+
+  <a href="hierarchy.html" class="back">← Back to Leadership</a>
+</section>
+
+<footer>
+  <p>© 2025 Abitech. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

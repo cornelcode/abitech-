@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technology Department — Abitech</title>
+  <style>
+    :root {
+      --accent:#0b6fbf;
+      --accent-dark:#084f91;
+      --muted:#6b7280;
+      --bg:#f8fafc;
+      font-family:"Inter",sans-serif;
+    }
+    body{margin:0;background:var(--bg);color:#111;}
+    header{
+      display:flex;justify-content:space-between;align-items:center;
+      padding:20px 40px;background:black;color:white;flex-wrap:wrap;
+    }
+    header img{width:120px;border-radius:50%;}
+    nav a{
+      color:var(--accent);text-decoration:none;margin:0 10px;font-weight:600;
+    }
+    nav a:hover{color:white;}
+
+    /* Hero Section */
+    .hero{
+      background:url('https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1600')
+        center/cover no-repeat;
+      color:white;text-align:center;padding:120px 20px;
+      background-color:rgba(0,0,0,0.5);
+      background-blend-mode:multiply;
+    }
+    .hero h1{font-size:48px;margin:0;}
+    .hero p{font-size:20px;margin-top:10px;color:#f2f2f2;}
+
+    section{max-width:1100px;margin:60px auto;padding:20px;}
+    h2{color:var(--accent-dark);font-size:28px;margin-bottom:10px;}
+
+    .info-block{
+      display:flex;align-items:center;gap:40px;margin-bottom:60px;flex-wrap:wrap;
+    }
+    .info-block img{
+      width:400px;height:280px;object-fit:cover;border-radius:12px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);flex-shrink:0;
+    }
+    .info-text{flex:1;min-width:280px;}
+
+    .leader{
+      background:white;padding:40px;border-radius:14px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.1);margin-top:80px;text-align:center;
+    }
+    .leader img{
+      width:200px;height:200px;border-radius:50%;object-fit:cover;margin-bottom:20px;
+    }
+    .leader h3{margin:10px 0;color:var(--accent-dark);}
+    .leader p{color:var(--muted);line-height:1.6;}
+
+    .back{
+      display:inline-block;margin-top:40px;padding:12px 24px;
+      background:var(--accent);color:white;border-radius:8px;
+      text-decoration:none;transition:.3s;
+    }
+    .back:hover{background:var(--accent-dark);}
+
+    footer{
+      background:#000;color:white;text-align:center;padding:20px;margin-top:80px;
+    }
+
+    @media(max-width:768px){
+      header{flex-direction:column;text-align:center;}
+      .info-block{flex-direction:column;}
+      .hero h1{font-size:36px;}
+      .info-block img{width:100%;height:auto;}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="abitech logo.png" alt="Abitech Logo" />
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="technology.html">Technology</a>
+    <a href="business.html">Business</a>
+    <a href="agriculture.html">Agriculture</a>
+    <a href="hierarchy.html">Leadership</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>Technology Department</h1>
+  <p>Building innovative digital solutions that power Abitech’s global mission.</p>
+</div>
+
+<section>
+  <div class="info-block">
+    <div class="info-text">
+      <h2>Software Development & Systems Engineering</h2>
+      <p>
+        Our technology department is at the core of Abitech’s innovation strategy.
+        We design and develop secure, scalable web and mobile systems that serve
+        millions of users across our agriculture and business networks. Our engineers
+        build everything from ERP tools to e-commerce and IoT platforms.
+      </p>
+    </div>
+    <img src="https://images.pexels.com/photos/3861964/pexels-photo-3861964.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Software Development">
+  </div>
+
+  <div class="info-block">
+    <img src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Cloud Infrastructure">
+    <div class="info-text">
+      <h2>Cloud Infrastructure & Data Management</h2>
+      <p>
+        We deploy and manage enterprise-grade cloud systems that support real-time
+        analytics, artificial intelligence, and data-driven decision making. 
+        Our team ensures high availability, security, and performance across
+        all digital assets.
+      </p>
+    </div>
+  </div>
+
+  <div class="info-block">
+    <div class="info-text">
+      <h2>Cybersecurity & Network Defense</h2>
+      <p>
+        Protecting data integrity and user trust is a top priority. We apply
+        multilayered cybersecurity frameworks, regular audits, and machine learning–
+        based threat detection to secure Abitech’s technology ecosystem.
+      </p>
+    </div>
+    <img src="https://images.pexels.com/photos/5380642/pexels-photo-5380642.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Cybersecurity">
+  </div>
+
+  <div class="info-block">
+    <img src="https://images.pexels.com/photos/1181310/pexels-photo-1181310.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Innovation Lab">
+    <div class="info-text">
+      <h2>Innovation & Emerging Technologies</h2>
+      <p>
+        From AI and blockchain to sustainable agri-tech, the Technology Department
+        pioneers research and product prototypes that redefine how businesses,
+        farmers, and consumers connect digitally.
+      </p>
+    </div>
+  </div>
+
+  <div class="leader">
+    <img src="Screenshot 2025-11-06 191407.png" alt="Cornelius Barasa CTO">
+    <h3>Cornelius Barasa — Chief Technology Officer (CTO)</h3>
+    <p>
+      Cornelius leads Abitech’s technological vision and oversees all engineering,
+      product development, and innovation efforts. His leadership ensures that
+      Abitech’s systems remain future-ready, secure, and seamlessly integrated
+      across the company’s agriculture and business divisions.
+    </p>
+  </div>
+
+  <a href="hierarchy.html" class="back">← Back to Leadership</a>
+</section>
+
+<footer>
+  <p>© 2025 Abitech. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

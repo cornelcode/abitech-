@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Finance Department — Abitech</title>
+  <style>
+    :root {
+      --accent: #0b6fbf;
+      --accent-dark: #084f91;
+      --text-color: #222;
+      --muted: #6b7280;
+      --bg: #f8fafc;
+      font-family: "Inter", sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text-color);
+    }
+
+    header {
+      background: #000;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      width: 120px;
+      border-radius: 50%;
+    }
+
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    .hero {
+      background: url('https://images.pexels.com/photos/210990/pexels-photo-210990.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+      background-blend-mode: multiply;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-top: 10px;
+      color: #f1f1f1;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 20px;
+    }
+
+    h2 {
+      color: var(--accent-dark);
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .info-block {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 60px;
+      flex-wrap: wrap;
+    }
+
+    .info-block img {
+      width: 400px;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      flex-shrink: 0;
+    }
+
+    .info-text {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .leader {
+      background: white;
+      padding: 40px;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-top: 80px;
+    }
+
+    .leader img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .leader h3 {
+      margin: 10px 0;
+      color: var(--accent-dark);
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 12px 24px;
+      background: var(--accent);
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .back:hover {
+      background: var(--accent-dark);
+    }
+
+    footer {
+      background: #000;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 80px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      .info-block {
+        flex-direction: column;
+      }
+      .hero h1 {
+        font-size: 36px;
+      }
+      .info-block img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="abitech logo.png" alt="Abitech Logo" />
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="technology.html">Technology</a>
+    <a href="business.html">Business</a>
+    <a href="agriculture.html">Agriculture</a>
+    <a href="hierarchy.html">Leadership</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>Finance Department</h1>
+  <p>Driving financial growth, accountability, and sustainability at Abitech.</p>
+</div>
+
+<section>
+  <div class="info-block">
+    <div class="info-text">
+      <h2>Strategic Financial Management</h2>
+      <p>
+        Our finance team manages Abitech’s global financial strategy, ensuring that 
+        resources are allocated efficiently across agriculture, business, and 
+        technology operations. We analyze investment opportunities, monitor 
+        performance, and drive profitability through smart budgeting and forecasting.
+      </p>
+    </div>
+    <img src="https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Financial Strategy">
+  </div>
+
+  <div class="info-block">
+    <img src="https://images.pexels.com/photos/4968638/pexels-photo-4968638.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Compliance and Risk">
+    <div class="info-text">
+      <h2>Compliance and Risk Oversight</h2>
+      <p>
+        The department enforces compliance with local and international financial 
+        regulations, while also managing risk exposure. Through rigorous audits, 
+        transparent reporting, and ethical standards, we maintain trust among 
+        investors, partners, and stakeholders.
+      </p>
+    </div>
+  </div>
+
+  <div class="info-block">
+    <div class="info-text">
+      <h2>Innovation and Sustainability</h2>
+      <p>
+        Abitech Finance pioneers sustainable funding models by integrating 
+        technology-driven tools like AI-powered analytics, blockchain recordkeeping, 
+        and cloud-based forecasting to optimize our resource management.
+      </p>
+    </div>
+    <img src="https://images.pexels.com/photos/7538751/pexels-photo-7538751.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Financial Innovation">
+  </div>
+
+  <div class="leader" align="center">
+    <img src="https://images.pexels.com/photos/874158/pexels-photo-874158.jpeg?auto=compress&cs=tinysrgb&w=800" alt="David Kim CFO">
+    <h3>David Kim — Chief Financial Officer (CFO)</h3>
+    <p>
+      David Kim oversees all financial operations of Abitech, aligning our fiscal 
+      goals with corporate growth and sustainability. With years of experience in 
+      investment management and corporate finance, he ensures financial transparency 
+      and operational excellence.
+    </p>
+  </div>
+
+  <a href="hierarchy.html" class="back">← Back to Leadership</a>
+</section>
+
+<footer>
+  <p>© 2025 Abitech. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

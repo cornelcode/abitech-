@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Human Resources — Abitech</title>
+  <style>
+    :root {
+      --accent:#157347;
+      --accent2:#0b6fbf;
+      --muted:#6b7280;
+      font-family: Inter, system-ui, sans-serif;
+    }
+    body {margin:0; background:#f5f9f6; color:#111;}
+    header {
+      display:flex; justify-content:space-between; align-items:center;
+      padding:20px 40px; background:black; color:white;
+    }
+    .logo img {width:120px; height:auto; border-radius:50%;}
+    nav a {
+      margin:0 10px; color:var(--accent2);
+      text-decoration:none; font-weight:600;
+    }
+    nav a:hover {text-decoration:underline;}
+    section {max-width:1000px; margin:60px auto; padding:20px;}
+    h1 {color:var(--accent); font-size:32px;}
+    p {color:var(--muted); line-height:1.6;}
+    .leader {
+      display:flex; flex-wrap:wrap; align-items:center; gap:30px;
+      margin-top:40px;
+    }
+    .leader img {
+      width:300px; height:auto; border-radius:14px; object-fit:cover;
+      box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    }
+    .back {
+      display:inline-block; margin-top:40px; padding:10px 20px;
+      background:var(--accent2); color:white; border-radius:8px;
+      text-decoration:none;
+    }
+    .back:hover {background:#084f91;}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="abitech logo.png" alt="Abitech Logo" />
+  </div>
+  <nav>
+    <a href="abitech.html">Home</a>
+    <a href="technology.html">Technology</a>
+    <a href="business.html">Business</a>
+    <a href="agriculture.html">Agriculture</a>
+    <a href="hierarchy.html">Leadership</a>
+  </nav>
+</header>
+
+<section>
+  <h1>Human Resources Department</h1>
+  <p>
+    At Abitech, our people are our greatest strength. The Human Resources Department 
+    focuses on fostering an inclusive, innovative, and growth-oriented culture. 
+    From recruitment and training to performance and well-being, the HR team ensures 
+    every employee feels valued and empowered to contribute to Abitech’s vision.
+  </p>
+
+  <div class="leader">
+    <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Human Resources Team">
+    <div>
+      <h2>Michael Wilson</h2>
+      <p><strong>Chief Human Resources Officer (CHRO)</strong></p>
+      <p>
+        Michael leads the people operations of Abitech with empathy and strategy. 
+        His department oversees recruitment, professional development, and 
+        organizational culture — ensuring every team member thrives within 
+        our interconnected ecosystem of business, agriculture, and technology.
+      </p>
+    </div>
+  </div>
+
+  <a href="hierarchy.html" class="back">← Back to Leadership</a>
+</section><!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Security — Abitech</title>
+  <style>
+    :root {
+      --accent:#157347;
+      --accent2:#0b6fbf;
+      --muted:#6b7280;
+      --light:#f7faf8;
+      font-family: Inter, system-ui, sans-serif;
+    }
+
+    body {
+      margin:0;
+      background:var(--light);
+      color:#111;
+      line-height:1.6;
+    }
+
+    header {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 40px;
+      background:black;
+      color:white;
+      box-shadow:0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .logo img {
+      width:120px;
+      height:auto;
+      border-radius:50%;
+    }
+
+    nav a {
+      margin:0 12px;
+      color:var(--accent2);
+      text-decoration:none;
+      font-weight:600;
+      transition:color 0.3s ease;
+    }
+
+    nav a:hover {
+      color:#0a58ca;
+      text-decoration:underline;
+    }
+
+    section {
+      max-width:1100px;
+      margin:60px auto;
+      padding:0 20px;
+    }
+
+    h1 {
+      font-size:34px;
+      color:var(--accent);
+      margin-bottom:20px;
+    }
+
+    h2 {
+      font-size:24px;
+      color:var(--accent2);
+      margin-top:40px;
+      margin-bottom:10px;
+    }
+
+    p {
+      color:var(--muted);
+      font-size:17px;
+      margin-bottom:16px;
+    }
+
+    img {
+      border-radius:12px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.05);
+      margin:20px 0;
+      width:100%;
+      height:auto;
+      object-fit:cover;
+    }
+
+    .leader {
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      gap:40px;
+      margin-top:40px;
+    }
+
+    .leader img {
+      width:320px;
+      height:360px;
+      border-radius:14px;
+      object-fit:cover;
+    }
+
+    .back {
+      display:inline-block;
+      margin-top:60px;
+      padding:12px 24px;
+      background:var(--accent2);
+      color:white;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:600;
+      transition:background 0.3s ease;
+    }
+
+    .back:hover {
+      background:#084f91;
+    }
+
+    footer {
+      text-align:center;
+      padding:20px;
+      background:black;
+      color:#bbb;
+      margin-top:80px;
+      font-size:14px;
+    }
+
+    @media (max-width:768px) {
+      .leader {
+        flex-direction:column;
+      }
+      .leader img {
+        width:100%;
+        height:auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="abitech logo.png" alt="Abitech Logo" />
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="technology.html">Technology</a>
+    <a href="business.html">Business</a>
+    <a href="agriculture.html">Agriculture</a>
+    <a href="humanresources.html">HR</a>
+    <a href="marketing.html">Marketing</a>
+    <a href="hierarchy.html">Leadership</a>
+  </nav>
+</header>
+
+<section>
+  <h1>Security Department</h1>
+  <p>
+    The Security Department at <strong>Abitech</strong> ensures that all company assets — physical, digital, and human — are protected against threats. 
+    In an era of growing cybersecurity risks and global uncertainty, the department operates at the core of Abitech’s commitment to safety and resilience.
+  </p>
+  <img src="https://images.pexels.com/photos/5380647/pexels-photo-5380647.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Cybersecurity Operations" />
+
+  <p>
+    This department covers multiple layers of protection — from data encryption to employee safety and business continuity planning. 
+    Under the leadership of the Chief Security Officer (CSO), Abitech maintains strong systems that safeguard customers, partners, and internal operations.
+  </p>
+
+  <div class="leader">
+    <img src="https://images.pexels.com/photos/1181715/pexels-photo-1181715.jpeg?auto=compress&cs=tinysrgb&w=800" alt="CSO portrait">
+    <div>
+      <h2>Linda Martinez</h2>
+      <p><strong>Chief Security Officer (CSO)</strong></p>
+      <p>
+        Linda oversees the entire security framework of Abitech — from cyber defense to physical protection.
+        She works closely with the CTO and CFO to ensure every layer of business operation runs under secure protocols.
+        Her mission is to create a safe environment for innovation and growth.
+      </p>
+      <p>
+        With 12+ years in corporate and IT security, Linda leads Abitech’s Security Intelligence Division, guiding the design of predictive systems 
+        that prevent threats before they arise.
+      </p>
+    </div>
+  </div>
+
+  <h2>Core Security Functions</h2>
+  <p>
+    The department’s activities are organized into key focus areas, ensuring complete coverage of both digital and physical threats.
+  </p>
+
+  <h2>1. Cybersecurity & Data Protection</h2>
+  <p>
+    This division focuses on protecting Abitech’s digital assets, software systems, and client data through encryption, monitoring, and AI-based threat detection.
+    The team also enforces network segmentation, firewall management, and penetration testing.
+  </p>
+  <img src="https://images.pexels.com/photos/5380649/pexels-photo-5380649.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Data Protection Team" />
+
+  <h2>2. Physical Security & Infrastructure Safety</h2>
+  <p>
+    Physical security ensures all Abitech facilities — offices, data centers, and agricultural branches — are protected through surveillance, access control,
+    and risk management protocols. Trained personnel ensure 24-hour protection for employees and assets.
+  </p>
+  <img src="https://images.pexels.com/photos/6390506/pexels-photo-6390506.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Physical Security Surveillance" />
+
+  <h2>3. Risk Assessment & Compliance</h2>
+  <p>
+    Abitech’s CSO team conducts continuous risk assessments to identify, analyze, and mitigate potential threats.
+    Regular audits ensure compliance with national and international security standards such as ISO 27001 and GDPR.
+  </p>
+  <img src="https://images.pexels.com/photos/3184307/pexels-photo-3184307.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Security Compliance Meeting" />
+
+  <h2>4. Incident Response & Business Continuity</h2>
+  <p>
+    The incident response unit manages all security alerts, containment, and post-incident reviews. 
+    They also create business continuity plans ensuring operations continue smoothly during crises such as system outages or data breaches.
+  </p>
+  <img src="https://images.pexels.com/photos/3183171/pexels-photo-3183171.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Incident Response Team" />
+
+  <h2>5. Employee Security Training</h2>
+  <p>
+    Security awareness is central to Abitech’s culture. Employees are trained to detect phishing, handle confidential information safely, and report suspicious behavior promptly.
+  </p>
+  <img src="https://images.pexels.com/photos/3184301/pexels-photo-3184301.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Employee Security Workshop" />
+
+  <h2>6. Collaboration with Other Departments</h2>
+  <p>
+    The CSO collaborates with all Abitech divisions — working with the CTO on software protection, with HR on employee security protocols, and with the CFO on fraud prevention and compliance.
+  </p>
+  <img src="https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Departmental Security Collaboration" />
+
+  <a href="hierarchy.html" class="back">← Back to Leadership</a>
+</section>
+
+<footer>
+  © 2025 Abitech Corporation. All Rights Reserved.  
+  | Security Division |
+</footer>
+
+</body>
+</html>
+
+
+</body>
+</html>

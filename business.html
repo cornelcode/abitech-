@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Commerce — Abitech</title>
+  <style>
+    :root{
+      --accent:#157347;
+      --accent2:#0b6fbf;
+      --muted:#6b7280;
+      --bg:#f8faf9;
+      --card:#ffffff;
+      --radius:12px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:#111;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.6;
+    }
+
+    /* Header */
+    header{
+      background:#000;
+      color:#fff;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:18px 36px;
+      position:sticky;
+      top:0;
+      z-index:40;
+      box-shadow:0 2px 8px rgba(0,0,0,0.12);
+    }
+    .logo img{width:110px;height:auto;border-radius:8px}
+    nav{display:flex;gap:14px;align-items:center}
+    nav a{color:var(--accent2);text-decoration:none;font-weight:600;padding:6px 8px}
+    nav a:hover{text-decoration:underline}
+
+    /* Page hero */
+    .hero{
+      background:linear-gradient(135deg,#eef7f1,#eef4ff);
+      padding:64px 20px;
+      text-align:center;
+    }
+    .hero h1{margin:0 auto 12px;color:var(--accent);font-size:34px;max-width:1000px}
+    .hero p{margin:0 auto;color:var(--muted);max-width:900px;font-size:17px}
+
+    /* Main container */
+    .container{max-width:1100px;margin:36px auto;padding:0 20px 80px}
+
+    /* Section layout */
+    .section{
+      display:flex;
+      gap:30px;
+      align-items:flex-start;
+      margin:34px 0;
+    }
+    .section .text{flex:1}
+    .section .text h2{margin:0 0 12px;color:var(--accent2);font-size:22px}
+    .section .text p{margin:0 0 12px;color:var(--muted);font-size:16px}
+    .media{width:420px;flex-shrink:0}
+    .media img{width:100%;height:auto;border-radius:var(--radius);box-shadow:0 6px 18px rgba(8,22,46,0.06);display:block}
+
+    /* Leader block */
+    .leader{
+      display:flex;
+      gap:24px;
+      align-items:center;
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:22px;
+      box-shadow:0 8px 24px rgba(8,22,46,0.06);
+      margin-top:26px;
+    }
+    .leader img{width:260px;height:260px;object-fit:cover;border-radius:12px}
+    .leader .info h3{margin:0 0 6px;color:var(--accent)}
+    .leader .info p{margin:6px 0;color:var(--muted)}
+
+    /* Deep dive boxes */
+    .box{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:22px;
+      margin-top:22px;
+      box-shadow:0 6px 18px rgba(8,22,46,0.04);
+    }
+    .box h3{margin:0 0 10px;color:var(--accent)}
+    .box ul{margin:0 0 0 18px;color:var(--muted)}
+    .box li{margin-bottom:8px}
+
+    .back{
+      display:inline-block;
+      margin-top:28px;
+      padding:10px 18px;
+      background:var(--accent2);
+      color:#fff;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:600;
+    }
+    .back:hover{background:#084f91}
+
+    footer{
+      text-align:center;
+      padding:24px;
+      background:#0b0b0b;
+      color:#cfcfcf;
+      margin-top:56px;
+      font-size:14px;
+    }
+
+    /* Responsive */
+    @media (max-width:980px){
+      .section{flex-direction:column}
+      .media{width:100%}
+      .leader{flex-direction:column;text-align:center}
+      .leader img{width:70%;max-width:320px;margin:0 auto}
+      header{padding:14px 18px}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="abitech logo.png" alt="Abitech Logo">
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="technology.html">Technology</a>
+      <a href="business.html">Business</a>
+      <a href="agriculture.html">Agriculture</a>
+      <a href="hierarchy.html">Leadership</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero" role="banner">
+      <h1>Commerce & Commercial Strategy — Abitech</h1>
+      <p>
+        The Commercial division transforms Abitech’s products into measurable revenue and lasting partnerships.
+        We combine go-to-market strategy, partnerships, sales operations, and customer success to scale impact across markets.
+      </p>
+    </div>
+
+    <div class="container" role="main">
+
+      <!-- Overview -->
+      <article class="section" id="overview">
+        <div class="text">
+          <h2>Overview</h2>
+          <p>
+            The Commercial function at Abitech is responsible for converting innovation into value. Led by the Chief Commercial Officer,
+            the team aligns pricing, sales, partnerships, channel strategy and customer success to grow revenue in both developed and emerging markets.
+          </p>
+          <p>
+            Commerce works closely with Product, Technology and Marketing to ensure solutions are priced, positioned and delivered in ways
+            that meet customer needs while maintaining sustainable margins.
+          </p>
+        </div>
+        <div class="media">
+          <img src="https://images.pexels.com/photos/3184293/pexels-photo-3184293.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="commercial overview">
+        </div>
+      </article>
+
+      <!-- Sales Strategy -->
+      <article class="section" id="sales-strategy">
+        <div class="text">
+          <h2>Sales Strategy & Go-to-Market</h2>
+          <p>
+            Abitech’s sales strategy blends direct enterprise engagement and channel partnerships. The GTM framework defines customer segments,
+            value propositions, sales motions (direct, channel, partner-led), and pilot-to-scale journeys for enterprise and agricultural customers.
+          </p>
+          <p>
+            The Commercial team develops playbooks for onboarding large accounts, coordinates proof-of-concept phases, and scales successful pilots
+            into long-term contracts with service-level agreements.
+          </p>
+        </div>
+        <div class="media">
+          <img src="https://images.pexels.com/photos/3182762/pexels-photo-3182762.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="sales strategy">
+        </div>
+      </article>
+
+      <!-- Partnerships -->
+      <article class="section" id="partnerships">
+        <div class="text">
+          <h2>Partnerships & Channel Development</h2>
+          <p>
+            Strategic partnerships accelerate distribution and credibility. Abitech builds alliances with retailers, logistics providers,
+            financial institutions, agribusiness cooperatives, and technology vendors to expand reach and deliver integrated solutions.
+          </p>
+          <p>
+            The Partnerships team structures revenue-sharing models, co-marketing initiatives, and technical integrations to ensure partners
+            can deliver strong customer outcomes and sustainable returns.
+          </p>
+        </div>
+        <div class="media">
+          <img src="https://images.pexels.com/photos/3182766/pexels-photo-3182766.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="partnerships">
+        </div>
+      </article>
+
+      <!-- Customer Success -->
+      <article class="section" id="customer-success">
+        <div class="text">
+          <h2>Customer Success & Retention</h2>
+          <p>
+            Retention and lifetime value matter. The Customer Success function ensures customers realize value from Abitech solutions,
+            providing onboarding, training, health checks, and a feedback loop to Product and Tech teams for continuous improvement.
+          </p>
+          <p>
+            Success managers proactively identify expansion opportunities and risks, turning satisfied customers into references and long-term partners.
+          </p>
+        </div>
+        <div class="media">
+          <img src="https://images.pexels.com/photos/3184327/pexels-photo-3184327.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="customer success">
+        </div>
+      </article>
+
+      <!-- Market Expansion -->
+      <article class="section" id="market-expansion">
+        <div class="text">
+          <h2>Market Expansion & New Verticals</h2>
+          <p>
+            Commerce leads market research, country entry strategies, and pilot programs to test demand in new geographies and industry verticals.
+            This includes regulatory analysis, distribution mapping, pricing localization, and go-to-market resource planning.
+          </p>
+          <p>
+            Expansion work is cross-functional, requiring close coordination with legal, finance, and operations to manage compliance and supply chain readiness.
+          </p>
+        </div>
+        <div class="media">
+          <img src="https://images.pexels.com/photos/3183198/pexels-photo-3183198.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="market expansion">
+        </div>
+      </article>
+
+      <!-- Pricing & Revenue Models -->
+      <article class="section" id="pricing">
+        <div class="text">
+          <h2>Pricing, Revenue Models & Commercial Ops</h2>
+          <p>
+            The Commercial team defines pricing strategies—subscription, usage-based, transaction fees, and hybrid models—tailored to customer segments.
+            Commercial Ops handles quoting, contract templates, renewal workflows, payment terms and collections in collaboration with Finance.
+          </p>
+          <p>
+            Operations support includes CRM hygiene, sales enablement tools, pipeline governance, and playbook enforcement to ensure predictable revenue growth.
+          </p>
+        </div>
+        <div class="media">
+          <img src="https://images.pexels.com/photos/3183185/pexels-photo-3183185.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="pricing and revenue">
+        </div>
+      </article>
+
+      <!-- Analytics & CRM -->
+      <article class="section" id="analytics">
+        <div class="text">
+          <h2>Analytics, CRM & Sales Intelligence</h2>
+          <p>
+            Data powers smarter commercial decisions. The Commerce analytics team builds dashboards for pipeline health, conversion rates,
+            customer acquisition cost, and lifetime value. Integrations with CRM and marketing systems provide a single source of truth for opportunity
+            scoring and prioritization.
+          </p>
+          <p>
+            Insights are used to optimize channel mix, refine sales motions, and inform product-market fit decisions.
+          </p>
+        </div>
+        <div class="media">
+          <img src="https://images.pexels.com/photos/3184297/pexels-photo-3184297.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="analytics and crm">
+        </div>
+      </article>
+
+      <!-- Operations Coordination -->
+      <article class="section" id="ops">
+        <div class="text">
+          <h2>Operations Coordination & Fulfillment</h2>
+          <p>
+            Commercial operations ensures orders are fulfilled efficiently—managing logistics, inventory coordination, delivery SLAs, and returns processes.
+            For agritech solutions, this includes cold-chain logistics, farm-to-retailer scheduling, and last-mile distribution planning.
+          </p>
+          <p>
+            Coordination with Supply Chain and Technology teams ensures customer promises are backed by operational capability.
+          </p>
+        </div>
+        <div class="media">
+          <img src="https://images.pexels.com/photos/3182765/pexels-photo-3182765.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="operations coordination">
+        </div>
+      </article>
+
+      <!-- Compliance & Risk -->
+      <article class="section" id="compliance">
+        <div class="text">
+          <h2>Commercial Compliance & Risk Management</h2>
+          <p>
+            Commercial deals carry legal, regulatory and financial risk. The CCO ensures contract review, compliance with trade regulations,
+            anti-corruption practices, and alignment with corporate policies. High-value deals undergo risk assessment with Legal and Finance.
+          </p>
+          <p>
+            This function protects Abitech’s reputation while enabling strategic growth.
+          </p>
+        </div>
+        <div class="media">
+          <img src="https://images.pexels.com/photos/3184295/pexels-photo-3184295.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="compliance and risk">
+        </div>
+      </article>
+
+      <!-- Leader block -->
+      <section class="box" id="cco">
+        <div class="leader">
+          <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Titus Kibiwott portrait">
+          <div class="info">
+            <h3>Titus Kibiwott</h3>
+            <p><strong>Chief Commercial Officer (CCO)</strong></p>
+            <p>
+              Titus leads Abitech’s commercial strategy, overseeing sales, partnerships, customer success and revenue operations.
+              He focuses on scaling sustainable revenue streams, building partner ecosystems, and creating world-class customer experiences.
+            </p>
+            <p>
+              His approach balances aggressive market expansion with disciplined operations to ensure high-quality delivery and profitable growth.
+            </p>
+          </div>
+        </div>
+
+        <div class="box" aria-labelledby="detailed-commerce-functions">
+          <h3 id="detailed-commerce-functions">Detailed Commercial Functions & Activities</h3>
+          <ul>
+            <li><strong>Sales Enablement:</strong> Build playbooks, training, CRM templates and collateral for consistent sales execution.</li>
+            <li><strong>Partner Management:</strong> Recruit, onboard and manage reseller, distribution and strategic technology partners.</li>
+            <li><strong>Commercial Ops:</strong> Maintain quote-to-cash workflows, contract lifecycle and renewal pipelines.</li>
+            <li><strong>Customer Success:</strong> Build post-sale programs that increase retention, upsell and customer advocacy.</li>
+            <li><strong>Market Research:</strong> Use local insights and competitive analysis to prioritize new country launches and product adaptations.</li>
+            <li><strong>Pricing & Packaging:</strong> Define the mix of subscription, transactional and hybrid revenue models across segments.</li>
+            <li><strong>Compliance & Negotiation:</strong> Conduct deal-level risk assessments, negotiate terms and secure approvals with Legal/Finance.</li>
+            <li><strong>Revenue Forecasting:</strong> Produce monthly and quarterly forecasts tied to pipeline health and lead indicators.</li>
+          </ul>
+        </div>
+
+        <a href="hierarchy.html" class="back">← Back to Leadership</a>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Abitech Corporation. All Rights Reserved. — Commercial Division
+  </footer>
+
+</body>
+</html>

@@ -17,6 +17,8 @@
       background: #f5f9f6;
       color: #111;
     }
+
+    /* Header */
     header {
       display: flex;
       justify-content: space-between;
@@ -66,34 +68,16 @@
       transition: 0.3s;
     }
 
-    /* Responsive design */
-    @media (max-width: 768px) {
-      nav {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 70px;
-        right: 30px;
-        background: black;
-        width: 200px;
-        border-radius: var(--radius);
-        padding: 15px;
-      }
-      nav.active {
-        display: flex;
-      }
-      .menu-toggle {
-        display: flex;
-      }
-    }
-
-    /* Page content */
+    /* Hero Section */
     .hero {
+      display: flex;
       align-items: center;
       justify-content: center;
       padding: 80px;
       text-align: left;
       background: linear-gradient(135deg, #f2fff7, #e7f0ff);
+      flex-wrap: wrap;
+      gap: 40px;
     }
     .hero h1 {
       font-size: 40px;
@@ -104,6 +88,40 @@
       max-width: 600px;
       color: var(--muted);
     }
+
+    .hero-left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .hero-left img.main {
+      width: 200px;
+      height: 250px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .hero-right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .hero-right img {
+      border-radius: 90px;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+    .hero-right div {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    /* Team Section */
     .team {
       max-width: 1200px;
       margin: 60px auto;
@@ -115,7 +133,7 @@
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
     }
     .member {
@@ -132,11 +150,85 @@
       object-fit: cover;
       margin-bottom: 10px;
     }
+
+    /* Footer */
     footer {
       text-align: center;
       padding: 20px;
       background: white;
       margin-top: 40px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 992px) {
+      .hero {
+        padding: 50px 20px;
+      }
+      .hero h1 {
+        font-size: 32px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 30px;
+        background: black;
+        width: 200px;
+        border-radius: var(--radius);
+        padding: 15px;
+        z-index: 1000;
+      }
+      nav.active {
+        display: flex;
+      }
+      .menu-toggle {
+        display: flex;
+      }
+
+      .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .hero-left {
+        align-items: center;
+      }
+      .hero-left img.main {
+        margin: 20px auto 0;
+      }
+      .hero-right {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .hero-right img {
+        width: 120px;
+        height: 120px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 26px;
+      }
+      .hero-left img.main {
+        width: 150px;
+        height: 200px;
+      }
+      .hero-right img {
+        width: 100px;
+        height: 100px;
+      }
+      header {
+        padding: 10px 20px;
+      }
+      .logo img {
+        width: 90px;
+      }
     }
   </style>
 </head>
@@ -146,7 +238,6 @@
       <img src="Screenshot 2025-11-06 122819.png" alt="Abitech Logo" />
     </div>
 
-    <!-- Hamburger Icon -->
     <div class="menu-toggle" id="menu-toggle">
       <span></span>
       <span></span>
@@ -158,26 +249,24 @@
       <a href="technology.html" style="color: #0b6fbf;">Technology</a>
       <a href="business.html"  style="color: #0b6fbf;">Business</a>
       <a href="agriculture.html" style="color: #0b6fbf;">Agriculture</a>
-      <a href="hierarchy.html" style="color: #0b6fbf;">Leadership Functions</a>
+      <a href="hierarchy.html" style="color: #0b6fbf;">Leadership</a>
     </nav>
   </header>
 
   <section class="hero">
-    <div style="display: flex; justify-content: space-between;">
-      <div style="display: flex; flex-direction: column;">
-        <div style="display: flex;">
-          <h1>Welcome to </h1>
-          <img src="abitech logo.png" alt="Abitech Logo" style="width: 120px; height: 28px; margin: 20px 0 0 12px;" />
-        </div>
-        <p>Innovating at the crossroads of Business, Agriculture, and Technology — building a smarter and more connected future.</p>
-        <img src="ChatGPT Image Nov 2, 2025, 08_39_38 AM.png" alt="abitech" style="width: 200px; height: 250px; border-radius: 10px; margin: 0 0 0 50px;">
+    <div class="hero-left">
+      <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+        <h1>Welcome to</h1>
+        <img src="abitech logo.png" alt="Abitech Logo" style="width: 120px; height: 28px; margin-top: 20px;" />
       </div>
+      <p>Innovating at the crossroads of Business, Agriculture, and Technology — building a smarter and more connected future.</p>
+      <img src="ChatGPT Image Nov 2, 2025, 08_39_38 AM.png" alt="abitech" class="main">
+    </div>
+    <div class="hero-right">
+      <img src="pexels-harschshivam-2007647.jpg" alt="tech">
       <div>
-        <img src="pexels-harschshivam-2007647.jpg" alt="tech" style="width: 150px; height: 150px; border-radius: 90px; margin: 0 0 0 280px;">
-        <div style="margin: 0 0 0 200px;">
-          <img src="pexels-flambo-388007-1112080.jpg" alt="agri" style="width: 150px; height: 150px; border-radius: 90px;">
-          <img src="pexels-pixabay-265087.jpg" alt="bus" style="width: 150px; height: 150px; border-radius: 90px;">
-        </div>
+        <img src="pexels-flambo-388007-1112080.jpg" alt="agri">
+        <img src="pexels-pixabay-265087.jpg" alt="bus">
       </div>
     </div>
   </section>
@@ -185,7 +274,7 @@
   <section id="team" class="team">
     <h2>Our Leadership Team</h2>
     <div class="grid">
-      <div class="member"> <img src="Screenshot 2025-11-06 190219.png" alt="CEO"><h3>Francis Bahati</h3><p>Chief Executive Officer (CEO)</p></div>
+      <div class="member"><img src="Screenshot 2025-11-06 190219.png" alt="CEO"><h3>Francis Bahati</h3><p>Chief Executive Officer (CEO)</p></div>
       <div class="member"><img src="Screenshot 2025-11-06 190447.png" alt="COO"><h3>Ryan Manguya</h3><p>Chief Operating Officer (COO)</p></div>
       <div class="member"><img src="Screenshot 2025-11-06 191407.png" alt="CTO"><h3>Cornelius Barasa</h3><p>Chief Technology Officer (CTO)</p></div>
       <div class="member"><img src="https://randomuser.me/api/portraits/women/4.jpg" alt="CFO"><h3>Victor Perur</h3><p>Chief Financial Officer (CFO)</p></div>
@@ -203,7 +292,6 @@
   <script>
     const toggle = document.getElementById('menu-toggle');
     const navbar = document.getElementById('navbar');
-
     toggle.addEventListener('click', () => {
       navbar.classList.toggle('active');
     });
